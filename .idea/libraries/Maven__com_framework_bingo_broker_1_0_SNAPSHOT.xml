@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: com.framework:bingo-broker:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/Software/apache-maven-3.3.9/repository/com/framework/bingo-broker/1.0-SNAPSHOT/bingo-broker-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/bingo-broker/bingo-broker-1.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://D:/Software/apache-maven-3.3.9/repository/com/framework/bingo-broker/1.0-SNAPSHOT/bingo-broker-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/bingo-broker/bingo-broker-1.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://D:/Software/apache-maven-3.3.9/repository/com/framework/bingo-broker/1.0-SNAPSHOT/bingo-broker-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

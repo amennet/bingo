@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bingo-broker" />
+        <module name="bingo-common" />
+        <module name="bingo-gateway" />
+        <module name="bingo-register" />
+        <module name="bingo-remoting" />
+        <module name="bingo-world" />
+        <module name="remoting" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bingo" target="1.8" />
+      <module name="bingo-broker" target="1.8" />
+      <module name="bingo-client" target="1.8" />
+      <module name="bingo-common" target="1.8" />
+      <module name="bingo-gameserver" target="1.8" />
+      <module name="bingo-gateway" target="1.8" />
+      <module name="bingo-namesrv" target="1.8" />
+      <module name="bingo-register" target="1.8" />
+      <module name="bingo-remoting" target="1.8" />
+      <module name="bingo-server" target="1.8" />
+      <module name="bingo-world" target="1.8" />
+      <module name="register" target="1.8" />
+      <module name="remoting" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,2058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ec6976b-58ac-4bb3-a438-1ee3ee3adcd3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_framework_bingo_broker_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_9_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_6_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_6_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/bingo-broker.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerStartupHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/ExecutorFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/INotifyProcess.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/Cluster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/HaStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/LoadBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/hastrategy/AbstractHaStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/hastrategy/FailfastHaStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/hastrategy/FailoverHaStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/AbstractLoadBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/RandomLoadBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/RoundRobinLoadBalance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/processor/DefaultRemotingProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/test/java/com/framework/test/GatewayRemotingProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/test/java/com/framework/test/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-broker/src/test/java/com/framework/test/RequestHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/bingo-common.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/api/ICommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/api/IProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/bean/BaseUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/command/GatewayCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/exception/BingoException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/io/UnsafeStringWriter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/Constants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/URL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/thread/ThreadFactoryImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ClassHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/CollectionUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ConcurrentHashSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ConfigUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/LRUCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/MathUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/NamedThreadFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/NetUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ReflectUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/StringUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/TimeCacheMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/UrlUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/bingo-gateway.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/CommandType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartupBackup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/ZkT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/ZkTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/bingo-register.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Container.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/NotifyListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Registry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/RegistryFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/RegistryService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/AbstractRegistry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/AbstractRegistryFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/FailbackRegistry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/SkipFailbackWrapperException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegisterHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegistry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegistryFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ChildListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/StateListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ZookeeperClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ZookeeperTransporter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/support/AbstractZookeeperClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/zkclient/ZkclientZookeeperClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/zkclient/ZkclientZookeeperTransporter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/test/java/com/framework/register/EmbeddedZookeeper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-register/src/test/java/com/framework/register/ZookeeperRegistryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/bingo-remoting.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/ChannelEventListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/CommandCustomHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/InvokeCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/RPCHook.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/RemotingClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/RemotingServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/RemotingService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/annotation/CFNotNull.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/annotation/CFNullable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/common/Pair.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/common/RemotingHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/common/RemotingUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/common/SemaphoreReleaseOnlyOnce.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/common/ServiceThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/exception/RemotingCommandException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/exception/RemotingConnectException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/exception/RemotingException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/exception/RemotingSendRequestException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/exception/RemotingTimeoutException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/exception/RemotingTooMuchRequestException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyClientConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyEventType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyRemotingAbstract.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyRemotingClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyRemotingServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyRequestProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettyServerConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/NettySystemConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/RequestTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/netty/ResponseFuture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/LanguageCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/RemotingCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/RemotingCommandType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/RemotingSerializable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/RemotingSysResponseCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/RocketMQSerializable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/main/java/com/framework/remoting/protocol/SerializeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/test/java/com/framework/remoting/RemotingServerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/test/java/com/framework/remoting/protocol/RemotingCommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/test/java/com/framework/remoting/protocol/RemotingSerializableTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-remoting/src/test/java/com/framework/remoting/protocol/RocketMQSerializableTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-world/bingo-world.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-world/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-world/src/main/java/com/framework/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo-world/src/test/java/com/framework/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bingo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/remoting/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-namesrv/target/" />
+    <ignored path="$PROJECT_DIR$/register/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-remoting/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-register/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-server/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-gameserver/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-world/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-client/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-common/target/" />
+    <ignored path="$PROJECT_DIR$/bingo-broker/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GatewayStartupBackup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartupBackup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="99" column="9" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GatewayStartup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrokerStartupHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerStartupHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3408#3409#0" expanded="true" />
+                <element signature="e#3447#3448#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrokerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="218" column="30" lean-forward="false" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotifyListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/NotifyListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailbackRegistry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/FailbackRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="407" column="32" lean-forward="false" selection-start-line="407" selection-start-column="32" selection-end-line="407" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractRegistry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/AbstractRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="435" column="12" lean-forward="false" selection-start-line="435" selection-start-column="12" selection-end-line="435" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GatewayRemotingProcessor2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GatewayRemotingProcessor3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>motan</find>
+      <find>Got ping response for sessionid</find>
+      <find>Got ping response for sessioni</find>
+      <find>Got ping response for s</find>
+      <find>Got ping response for</find>
+      <find>Got ping response</find>
+      <find>Got ping respons</find>
+      <find>Got ping re</find>
+      <find>Got ping r</find>
+      <find>Got ping</find>
+      <find>Got ping</find>
+      <find>Got pin</find>
+      <find>Got pi</find>
+      <find>Got p</find>
+      <find>Got</find>
+      <find>Got</find>
+      <find>Go</find>
+      <find>G</find>
+      <find>zkRegistry get new session notify.</find>
+      <find>zookeeper server 注册成功</find>
+      <find>clientPath</find>
+      <find>d</find>
+      <find>dub</find>
+      <find>dubb</find>
+      <find>request responseType is wrong</find>
+      <find>war</find>
+      <find>warn</find>
+      <find>dst is not exist url</find>
+      <find>addr</find>
+      <find>dubbo</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.framework</replace>
+      <replace>framework</replace>
+      <replace>com.framework</replace>
+      <replace>com.framework.</replace>
+      <replace />
+      <replace>String</replace>
+      <replace>.common.</replace>
+      <replace>Constants</replace>
+      <replace>log</replace>
+      <replace>BingoException</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\IdeaProjects\bingo\bingo-register\src\main</dir>
+      <dir>D:\IdeaProjects\bingo\</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/zkclient/ZkclientZookeeperTransporter.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/curator/CuratorZookeeperTransporter.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/curator/CuratorZookeeperClient.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/AbstractRegistryFactory.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Container.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/Container.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ZookeeperRegistryFactory.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ZookeeperRegistry.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ConfigUtils.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/test/java/com/framework/register/ZookeeperTest.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/INotifyProcess.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerConfig.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegisterHelper.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegistryFactory.java" />
+        <option value="$PROJECT_DIR$/bingo-register/pom.xml" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/RegistryContainer.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/URL.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/ZkT.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/ZkTest.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/UrlUtils.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/CommandType.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/api/Command.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/command/GatewayICommand.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/api/ICommand.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/command/GatewayCommand.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/processor/DefaultRemotingProcessor.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/hastrategy/AbstractHaStrategy.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/hastrategy/FailfastHaStrategy.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/hastrategy/FailoverHaStrategy.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/AbstractLoadBalance.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/RandomLoadBalance.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/RoundRobinLoadBalance.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/Cluster.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/HaStrategy.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/LoadBalance.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/io/UnsafeStringWriter.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/Constants.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/Excise.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ConfigUtils.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/NamedThreadFactory.java" />
+        <option value="$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/FailbackRegistry.java" />
+        <option value="$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegistry.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartupBackup.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor1.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor2.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor3.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerStartupHelper.java" />
+        <option value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartup.java" />
+        <option value="$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="ZookeeperTest.server" />
+    </enabled-run-configurations>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Software\apache-maven-3.3.9\repository" />
+        <option name="mavenHome" value="D:/Software/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\Software\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-remoting" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-remoting" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-register" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-register" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="com.framework:bingo-common:1.0.0" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependencyNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-register" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-register" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-gateway" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-gateway" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-common" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-common" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-broker" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo-broker" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bingo" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1927" />
+    <option name="width" value="1930" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>IgnoreResultOfCall</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bingo-gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gateway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bingo-namesrv" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/bingo-register/src/main/register/zookeeper/support" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.framework.register.support" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.framework" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\bingo" />
+      <recent name="D:\IdeaProjects\bingo\bingo-register\src\main\java\com\framework\register\zookeeper" />
+      <recent name="D:\IdeaProjects\bingo\bingo-register\src\main\java\com\framework\register" />
+      <recent name="D:\IdeaProjects\bingo\bingo-broker\src\main\java\com\framework" />
+      <recent name="D:\IdeaProjects\bingo\bingo-register\src\test\java\com\framework\register" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.framework.gateway" />
+      <recent name="com.framework.register" />
+      <recent name="com.framework.common.net" />
+      <recent name="com.framework.register.support" />
+      <recent name="com.framework.common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\bingo\bingo-register\src\main\java\com\framework\register\support" />
+      <recent name="D:\IdeaProjects\bingo\bingo-common\src\main" />
+      <recent name="D:\IdeaProjects\bingo\bingo-register\src\main" />
+      <recent name="D:\IdeaProjects\bingo\bingo-server\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.GatewayStartup">
+    <configuration default="false" name="ZookeeperTest.server (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.framework.register.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bingo-register" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.framework.register" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.register.ZookeeperTest" />
+      <option name="METHOD_NAME" value="server" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GatewayStartup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.framework.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.framework.gateway.GatewayStartup" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bingo-gateway" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ZkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.framework.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.framework.gateway.ZkTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bingo-gateway" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ZkT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.framework.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.framework.gateway.ZkT" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bingo-gateway" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CommandType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.framework.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.framework.gateway.CommandType" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bingo-gateway" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="bingo" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ZookeeperTest.server (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GatewayStartup" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ZkTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ZkT" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CommandType" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.GatewayStartup" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CommandType" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ZkT" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ZkTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ec6976b-58ac-4bb3-a438-1ee3ee3adcd3" name="Default" comment="" />
+      <created>1493088511759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493088511759</updated>
+      <workItem from="1493088514758" duration="24018000" />
+      <workItem from="1493180447165" duration="5015000" />
+      <workItem from="1493188164403" duration="1493000" />
+      <workItem from="1493189663220" duration="13457000" />
+      <workItem from="1493206525549" duration="27429000" />
+      <workItem from="1493283652579" duration="157000" />
+      <workItem from="1493283814429" duration="87000" />
+      <workItem from="1493284090529" duration="37265000" />
+      <workItem from="1493369973195" duration="83597000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ZookeeperTest_client - 2017.04.29 at 15h 50m 15s.xml">
+      <configuration name="ZookeeperTest.client" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_client - 2017.04.29 at 15h 50m 47s.xml">
+      <configuration name="ZookeeperTest.client" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_client - 2017.04.29 at 15h 52m 45s.xml">
+      <configuration name="ZookeeperTest.client" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server - 2017.04.29 at 15h 50m 57s.xml">
+      <configuration name="ZookeeperTest.server" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server - 2017.04.29 at 15h 52m 43s.xml">
+      <configuration name="ZookeeperTest.server" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server_(1) - 2017.04.29 at 16h 48m 19s.xml">
+      <configuration name="ZookeeperTest.server (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server_(1) - 2017.04.29 at 16h 48m 42s.xml">
+      <configuration name="ZookeeperTest.server (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server_(1) - 2017.04.29 at 16h 50m 04s.xml">
+      <configuration name="ZookeeperTest.server (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server_(1) - 2017.04.29 at 16h 53m 45s.xml">
+      <configuration name="ZookeeperTest.server (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ZookeeperTest_server_(1) - 2017.04.29 at 16h 55m 42s.xml">
+      <configuration name="ZookeeperTest.server (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="192518000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1927" y="0" width="1930" height="1047" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17972831" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19749217" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19801463" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23479189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3340448" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24439701" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14621131" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1859979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/register/src/main/java/com/framework/register/zookeeper/ZookeeperTransporter.java</url>
+          <line>11</line>
+          <properties class="com.framework.register.zookeeper.ZookeeperTransporter" method="connect">
+            <option name="EMULATED" value="true" />
+          </properties>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/common/URL.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/common/URL.java</url>
+          <line>303</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/ZookeeperRegistry.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/ZookeeperRegistry.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-client/src/main/java/com/framework/client/notify/ClientRegister.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/AbstractRegistry.java</url>
+          <line>383</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/ZookeeperRegistry.java</url>
+          <line>117</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/FailbackRegistry.java</url>
+          <line>179</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/ZookeeperRegistry.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/AbstractRegistry.java</url>
+          <line>373</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/support/FailbackRegistry.java</url>
+          <line>255</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-register/src/main/register/zookeeper/ZookeeperRegistry.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/processor/DefaultRemotingProcessor.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/cluster/loadbalance/AbstractLoadBalance.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerController.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="86" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/bean/BaseUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/command/GatewayCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/exception/BingoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/Excise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Software/jdk1.8.0_121/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="611" column="26" lean-forward="false" selection-start-line="611" selection-start-column="26" selection-end-line="611" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Software/apache-maven-3.3.9/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/concurrent/BasicThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="204" column="25" lean-forward="false" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Software/jdk1.8.0_121/src.zip!/javax/swing/SwingWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1222">
+          <caret line="767" column="28" lean-forward="false" selection-start-line="767" selection-start-column="28" selection-end-line="767" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/io/UnsafeStringWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/register/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-429">
+          <caret line="59" column="93" lean-forward="true" selection-start-line="59" selection-start-column="93" selection-end-line="59" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ClassHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/CollectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ConcurrentHashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ConfigUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1700">
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/NamedThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/ReflectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/utils/UrlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-common/src/main/java/com/framework/common/thread/ThreadFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/CommandType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/ZkT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="79" lean-forward="false" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/ZkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Registry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/RegistryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/RegistryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/AbstractRegistryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegisterHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="39" column="3" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/ZookeeperRegistryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/support/AbstractZookeeperClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/zkclient/ZkclientZookeeperClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/zkclient/ZkclientZookeeperTransporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ChildListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/StateListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ZookeeperClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/zookeeper/ZookeeperTransporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="62" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayRemotingProcessor3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartupBackup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="99" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerStartupHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3408#3409#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-gateway/src/main/java/com/framework/gateway/GatewayStartup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/AbstractRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="435" column="12" lean-forward="false" selection-start-line="435" selection-start-column="12" selection-end-line="435" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/support/FailbackRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="407" column="32" lean-forward="false" selection-start-line="407" selection-start-column="32" selection-end-line="407" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-register/src/main/java/com/framework/register/NotifyListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-broker/src/main/java/com/framework/broker/BrokerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="218" column="30" lean-forward="false" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>bingo-namesrv</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
