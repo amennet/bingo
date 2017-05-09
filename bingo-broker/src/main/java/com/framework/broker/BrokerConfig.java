@@ -2,10 +2,12 @@ package com.framework.broker;
 
 import com.framework.broker.cluster.HaStrategy;
 import com.framework.broker.cluster.LoadBalance;
-import com.framework.broker.processor.DefaultRemotingProcessor;
+import com.framework.common.api.INotify;
+import com.framework.common.api.IProcessor;
 import com.framework.common.register.URL;
-import com.framework.register.RegistryFactory;
+import com.framework.register.NotifyListener;
 import com.framework.register.support.ZookeeperRegisterHelper;
+import com.framework.remoting.netty.NettyRequestProcessor;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,13 +20,19 @@ public class BrokerConfig {
 
     private ZookeeperRegisterHelper zookeeperRegisterHelper;
 
-    private Map<URL, DefaultRemotingProcessor> registerUrls = new HashMap<>();
+    private Map<URL, NettyRequestProcessor> registerUrls = new HashMap<>();
 
     private List<URL> subsribeUrls;
 
     private LoadBalance loadBalance;
 
     private HaStrategy haStrategy;
+
+    private NotifyListener notifyListener;
+
+    private boolean dontStartNettyClient;
+
+    private INotify iNotify;
 
     private Map<Integer/* reqeustCode */, String/* brokerName */> requestBrokerName;
 
@@ -36,11 +44,11 @@ public class BrokerConfig {
         this.zookeeperRegisterHelper = zookeeperRegisterHelper;
     }
 
-    public Map<URL, DefaultRemotingProcessor> getRegisterUrls() {
+    public Map<URL, NettyRequestProcessor> getRegisterUrls() {
         return registerUrls;
     }
 
-    public void setRegisterUrls(Map<URL, DefaultRemotingProcessor> registerUrls) {
+    public void setRegisterUrls(Map<URL, NettyRequestProcessor> registerUrls) {
         this.registerUrls = registerUrls;
     }
 
@@ -68,6 +76,14 @@ public class BrokerConfig {
         this.haStrategy = haStrategy;
     }
 
+    public NotifyListener getNotifyListener() {
+        return notifyListener;
+    }
+
+    public void setNotifyListener(NotifyListener notifyListener) {
+        this.notifyListener = notifyListener;
+    }
+
     public Map<Integer, String> getRequestBrokerName() {
         return requestBrokerName;
     }
@@ -76,5 +92,19 @@ public class BrokerConfig {
         this.requestBrokerName = requestBrokerName;
     }
 
+    public boolean isDontStartNettyClient() {
+        return dontStartNettyClient;
+    }
 
+    public void setDontStartNettyClient(boolean dontStartNettyClient) {
+        this.dontStartNettyClient = dontStartNettyClient;
+    }
+
+    public INotify getiNotify() {
+        return iNotify;
+    }
+
+    public void setiNotify(INotify iNotify) {
+        this.iNotify = iNotify;
+    }
 }

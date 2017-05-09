@@ -8,8 +8,11 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/bingo-game/pom.xml" />
         <option value="$PROJECT_DIR$/bingo-gameserver/pom.xml" />
+        <option value="$PROJECT_DIR$/bingo-hall/pom.xml" />
         <option value="$PROJECT_DIR$/bingo-server/pom.xml" />
+        <option value="$PROJECT_DIR$/bingo-world/pom.xml" />
         <option value="$PROJECT_DIR$/register/pom.xml" />
       </set>
     </option>

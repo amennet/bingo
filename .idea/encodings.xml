@@ -3,11 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-broker" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bingo-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bingo-gameserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bingo-game" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-gateway" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bingo-namesrv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bingo-hall" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bingo-hall" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bingo-hall" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-register" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-remoting" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-world" charset="UTF-8" />

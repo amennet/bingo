@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/bingo-gateway/bingo-gateway.iml" filepath="$PROJECT_DIR$/bingo-gateway/bingo-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/bingo-register/bingo-register.iml" filepath="$PROJECT_DIR$/bingo-register/bingo-register.iml" />
       <module fileurl="file://$PROJECT_DIR$/bingo-remoting/bingo-remoting.iml" filepath="$PROJECT_DIR$/bingo-remoting/bingo-remoting.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bingo-world/bingo-world.iml" filepath="$PROJECT_DIR$/bingo-world/bingo-world.iml" />
     </modules>
   </component>
 </project>

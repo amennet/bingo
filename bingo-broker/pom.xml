@@ -34,5 +34,21 @@
             <artifactId>bingo-register</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <!-- motan -->
+        <dependency>
+            <groupId>com.weibo</groupId>
+            <artifactId>motan-core</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.weibo</groupId>
+            <artifactId>motan-transport-netty</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.weibo</groupId>
+            <artifactId>motan-registry-zookeeper</artifactId>
+            <version>0.3.0</version>
+        </dependency>
     </dependencies>
 </project>

@@ -9,7 +9,6 @@
         <module>bingo-remoting</module>
         <module>bingo-register</module>
         <module>bingo-gateway</module>
-        <module>bingo-world</module>
         <module>bingo-common</module>
         <module>bingo-broker</module>
     </modules>

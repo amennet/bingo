@@ -26,12 +26,14 @@ public class ZookeeperRegisterHelper {
 
     public void register(URL url) {
         Registry registry = registryFactory.getRegistry(registryUrl);
+        registry.unregister(url);
         registry.register(url);
         logger.info("zookeeper server 注册成功");
     }
 
     public void subscribe(URL url, NotifyListener notifyListener) {
         Registry registry = registryFactory.getRegistry(registryUrl);
+        registry.unsubscribe(url, notifyListener);
         registry.subscribe(url, notifyListener);
         logger.info("zookeeper broker 获取完成");
     }

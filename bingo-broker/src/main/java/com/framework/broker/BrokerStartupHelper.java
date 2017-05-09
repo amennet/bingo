@@ -4,11 +4,13 @@ import com.framework.broker.cluster.hastrategy.FailfastHaStrategy;
 import com.framework.broker.cluster.loadbalance.RoundRobinLoadBalance;
 import com.framework.broker.processor.DefaultRemotingProcessor;
 import com.framework.common.api.ICommand;
-import com.framework.common.exception.BingoException;
+import com.framework.common.api.INotify;
+import com.framework.common.api.IProcessor;
 import com.framework.common.register.URL;
 import com.framework.register.support.ZookeeperRegisterHelper;
 import com.framework.register.support.ZookeeperRegistryFactory;
 import com.framework.register.zookeeper.zkclient.ZkclientZookeeperTransporter;
+import com.framework.remoting.netty.NettyRequestProcessor;
 
 import java.util.*;
 
@@ -19,7 +21,7 @@ public final class BrokerStartupHelper {
 
     private String registryUrl;
 
-    private Map<URL, DefaultRemotingProcessor> serverUrls;
+    private Map<URL, NettyRequestProcessor> serverUrls;
 
     private Set<URL> clientUrls;
 
@@ -37,6 +39,7 @@ public final class BrokerStartupHelper {
         this.clientUrls = new HashSet<>();
         this.init = false;
         this.requestBrokerName = new HashMap<>();
+        this.brokerConfig = new BrokerConfig();
         if (commands != null && commands.length > 0) {
             for (ICommand command : commands) {
                 Map<Integer, String> cmds = command.getCommands();
@@ -48,8 +51,6 @@ public final class BrokerStartupHelper {
     }
 
     private BrokerStartupHelper init() {
-        brokerConfig = new BrokerConfig();
-
         brokerConfig.setHaStrategy(new FailfastHaStrategy());
         brokerConfig.setLoadBalance(new RoundRobinLoadBalance());
 
@@ -71,7 +72,6 @@ public final class BrokerStartupHelper {
         clientUrls.add(URL.clientUrl(brokerName));
         return this;
     }
-
 
     public BrokerStartupHelper createBrokerController() {
         if (!init) {
@@ -101,9 +101,25 @@ public final class BrokerStartupHelper {
             createBrokerController();
         }
         brokerController.start();
+
+        after();
+    }
+
+    private void after() {
+        for (Map.Entry<URL, NettyRequestProcessor> serverUrl : serverUrls.entrySet()) {
+            ((DefaultRemotingProcessor) serverUrl.getValue()).registerBrokerController(brokerController);
+        }
     }
 
     public BrokerController getBrokerController() {
         return brokerController;
+    }
+
+    public void dontStartNettyClient() {
+        brokerConfig.setDontStartNettyClient(true);
+    }
+
+    public void setiNotify(INotify iNotify) {
+        this.brokerConfig.setiNotify(iNotify);
     }
 }
