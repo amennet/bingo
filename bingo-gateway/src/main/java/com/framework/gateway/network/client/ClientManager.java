@@ -94,8 +94,10 @@ public class ClientManager {
         if (removed != null) {
             log.info("unregister consumer ok, no any connection, and remove client info table, {}",
                     removed);
-            for (ClientIdChangeListener clientIdChangeListener : clientIdChangeListeners) {
-                clientIdChangeListener.clientIdChanged(userId, removed.getObject2().getChannel());
+            if (clientIdChangeListeners != null) {
+                for (ClientIdChangeListener clientIdChangeListener : clientIdChangeListeners) {
+                    clientIdChangeListener.clientIdChanged(userId, removed.getObject2().getChannel());
+                }
             }
         }
     }
@@ -116,7 +118,7 @@ public class ClientManager {
             }
         } else {
             if (!infoOld.getObject1().getChannel().equals(infoNew.getChannel())) {
-                log.error("[BUG] consumer channel exist in broker, but clientId not equal. clientId: {} OLD: {} NEW: {} ",
+                log.error("[BUG] consumer userId exist in broker, but channel not equal. clientId: {} OLD: {} NEW: {} ",
                         userId,
                         infoOld.toString(),
                         infoNew.toString());

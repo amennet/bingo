@@ -72,7 +72,8 @@ public class GatewayController implements NotifyListener {
             throw new GatewayRuntimeException("the message is null");
         }
 
-        String userId = netMessage.getUserId();
+        // String userId = netMessage.getUserId();
+        String userId = netMessage.getTopic();
 
         RemotingCommand response = null;
         try {

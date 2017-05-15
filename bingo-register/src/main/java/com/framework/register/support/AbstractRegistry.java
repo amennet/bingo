@@ -78,7 +78,7 @@ public abstract class AbstractRegistry implements Registry {
         setUrl(url);
         // 启动文件保存定时器
         syncSaveFile = url.getParameter(Constants.REGISTRY_FILESAVE_SYNC_KEY, false);
-        String filename = url.getParameter(Constants.FILE_KEY, System.getProperty("user.home") + "/.dubbo/dubbo-registry-" + url.getHost() + ".cache");
+        String filename = url.getParameter(Constants.FILE_KEY, System.getProperty("user.home") + "/.bingo/bingo-registry-" + url.getHost() + ".cache");
         File file = null;
         if (ConfigUtils.isNotEmpty(filename)) {
             file = new File(filename);
@@ -177,7 +177,7 @@ public abstract class AbstractRegistry implements Registry {
                 try {
                     FileLock lock = channel.tryLock();
                 	if (lock == null) {
-                        throw new IOException("Can not lock the registry cache file " + file.getAbsolutePath() + ", ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties");
+                         throw new IOException("Can not lock the registry cache file " + file.getAbsolutePath() + ", ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties");
                     }
                 	// 保存
                     try {

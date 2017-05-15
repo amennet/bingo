@@ -2,6 +2,8 @@ package com.framework.gateway.processor;
 
 import com.framework.broker.processor.DefaultRemotingProcessor;
 import com.framework.common.bean.NetMessage;
+import com.framework.common.business.utils.ProtostuffUtil;
+import com.framework.common.command.GatewayCommand;
 import com.framework.gateway.network.GatewayController;
 import com.framework.remoting.exception.RemotingCommandException;
 import com.framework.remoting.protocol.RemotingCommand;
@@ -30,28 +32,20 @@ public class DefaultGatewayProcessor extends DefaultRemotingProcessor {
 
         System.out.println(gatewayController);
         try {
-
-            NetMessage netMessage = NetMessage.client("123456789").setCommand(1);
-            netMessage.setUserId("123456789");
-            gatewayController.sendToClient(netMessage);
+            byte[] body = request.getBody();
+            NetMessage deserialize = ProtostuffUtil.deserialize(body, NetMessage.class);
+            deserialize.setCommand(GatewayCommand.GAME_START);
+            gatewayController.sendToClient(deserialize);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
-        /*if (SystemCommand.PUSH.getCode() == code) {
-
-        } else if (SystemCommand.GETUSER.getCode() == code) {
-
-        } else if (SystemCommand.TEST1.getCode() == code) {
-
-        } else if (SystemCommand.TEST2.getCode() == code) {
-
-        } else if (SystemCommand.TEST3.getCode() == code) {
-
-        } else {
-            // processClientRequest();
-        }*/
+        if (GatewayCommand.GAME_START == code) {
+            log.info("GAME_START request : {}, ", request);
+        }  else {
+            log.info("request : {}, ", request);
+        }
         return request;
     }
 }

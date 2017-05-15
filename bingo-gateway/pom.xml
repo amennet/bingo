@@ -9,6 +9,7 @@
 
     <artifactId>bingo-gateway</artifactId>
     <packaging>jar</packaging>
+    <version>1.0.0</version>
 
     <name>bingo-gateway</name>
     <url>http://maven.apache.org</url>
@@ -29,9 +30,29 @@
             <artifactId>gameserver-login-provider</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>net.369qipai</groupId>
+            <artifactId>gameserver-world-provider</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
+        <finalName>gateway</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <!-- 是否替换资源中的属性-->
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -56,7 +77,80 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.0.0</version>
+                <!-- The configuration of the plugin -->
+                <configuration>
+                    <!-- Specifies the configuration file of the assembly plugin -->
+                    <descriptors>
+                        <descriptor>src/main/resources/package.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <!-- The configuration of the plugin -->
+                <configuration>
+                    <!-- Configuration of the archiver -->
+                    <archive>
+                        <!-- 生成的jar中，不要包含pom.xml和pom.properties这两个文-->
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                        <!-- Manifest specific configuration -->
+                        <manifest>
+                            <!-- 是否要把第三方jar放到manifest的classpath-->
+                            <addClasspath>true</addClasspath>
+                            <!-- 生成的manifest中classpath的前缀，因为要把第三方jar放到lib目录下，所以classpath的前缀是lib/ -->
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <!-- 应用的main class -->
+                            <mainClass>com.framework.gateway.GatewayStartup</mainClass>
+                        </manifest>
+                    </archive>
+                    <!-- 过滤掉不希望包含在jar中的文件 -->
+                    <excludes>
+                        <exclude>${project.basedir}/xml/*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-</project>
 
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+                <application.name>${build.finalName}</application.name>
+                <log.level>info</log.level>
+                <log.dirs>/server/logs/tcpush/</log.dirs>
+                <log.appendName>STDOUT</log.appendName>
+                <zookeeper.address>192.168.123.181:2181</zookeeper.address>
+                <server.address>127.0.0.1</server.address>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+                <application.name>${build.finalName}</application.name>
+                <log.level>info</log.level>
+                <log.dirs>/server/logs/tcpush/</log.dirs>
+                <log.appendName>FILE</log.appendName>
+                <zookeeper.address>192.168.221.48:2181</zookeeper.address>
+                <server.address>192.168.221.48</server.address>
+            </properties>
+        </profile>
+    </profiles>
+</project>

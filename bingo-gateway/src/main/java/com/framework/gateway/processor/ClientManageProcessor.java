@@ -27,7 +27,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public abstract class ClientManageProcessor implements GatewayProcessor {
-    private static final Logger log = LoggerFactory.getLogger(ClientManageProcessor.class);
+    protected static final Logger log = LoggerFactory.getLogger(ClientManageProcessor.class);
 
     protected GatewayController gatewayController;
 

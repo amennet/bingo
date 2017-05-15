@@ -11,4 +11,5 @@ public class GatewayCommand extends AbstractCommand {
     public static int USER_REGISTER = 1001;
     public static int USER_LOGIN = 1002;
 
+    public static final int GAME_START = 10005;
 }

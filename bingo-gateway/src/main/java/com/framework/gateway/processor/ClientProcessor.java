@@ -4,9 +4,7 @@ import com.framework.broker.rpc.RpcClient;
 import com.framework.common.bean.NetMessage;
 import com.framework.common.bean.enums.ErrorCode;
 import com.framework.common.business.utils.ProtostuffUtil;
-import com.framework.common.command.GameCommand;
-import com.framework.common.command.HallCommand;
-import com.framework.common.command.SystemCommand;
+import com.framework.common.command.*;
 import com.framework.gateway.exception.GatewayRuntimeException;
 import com.framework.remoting.CommandCustomHeader;
 import com.framework.remoting.exception.RemotingCommandException;
@@ -14,7 +12,11 @@ import com.framework.remoting.protocol.RemotingCommand;
 import gameserver.database.all.model.User;
 import gameserver.login.provider.IConnectProvider;
 import gameserver.login.provider.ILoginProvider;
+import gameserver.world.provider.IWorldProvider;
 import io.netty.channel.ChannelHandlerContext;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * Created by ZhangGe on 2017/5/3.
@@ -48,10 +50,35 @@ public class ClientProcessor extends ClientManageProcessor {
             enterRoomRandom(ctx, request);
         } else if (command == GameCommand.C_CALL_LORD) {
             callLord(ctx, request);
+        } else if (command == TestCommand.LOOP1) {
+            loop(ctx, request);
+        } else if (command == TestCommand.OPERATION) {
+            opertion(ctx, request);
         } else {
             throw new GatewayRuntimeException("没有此命令");
         }
         return null;
+    }
+
+    private void opertion(ChannelHandlerContext ctx, NetMessage request) {
+        gatewayController.sendToClient(request);
+    }
+
+    private void loop(ChannelHandlerContext ctx, NetMessage request) {
+        IWorldProvider iWorldProvider = RpcClient.getRefer(IWorldProvider.class);
+        List<User> userList = iWorldProvider.getUserList();
+        log.info("now date : {}, system time : {}, userList : {}", new Date(), System.currentTimeMillis(), userList);
+        log.info("print request, {}, time : {}", request, System.currentTimeMillis());
+
+        RemotingCommand requestCommand = RemotingCommand.createRequestCommand(HallCommand.C_CONTINUE, new CommandCustomHeader() {
+            @Override
+            public void checkFields() throws RemotingCommandException {
+
+            }
+        });
+        requestCommand.setBody(ProtostuffUtil.serialize(request));
+        requestCommand.markOnewayRPC();
+        brokerController.clusterRequest(requestCommand);
     }
 
     private NetMessage connect(ChannelHandlerContext ctx, NetMessage request) {
